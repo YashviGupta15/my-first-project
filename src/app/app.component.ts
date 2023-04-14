@@ -43,6 +43,9 @@ export class AppComponent implements OnInit{
    * @memberof AppComponent
    */
   cols: any[] = [];
+  col = [
+    {id: 'fixed', label: 'Fixed', fixed: true}
+  ]
   
   ngOnInit(): void {
     this.cols = HEADERS;

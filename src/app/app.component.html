@@ -1,16 +1,30 @@
-<p-table [columns]="cols" [value]="products">
+<p-table [columns]="cols" [value]="products" [scrollable]="true" scrollHeight="400px"
+[reorderableColumns]="true" [resizableColumns]="true" columnResizeMode="expand" responsiveLayout="scroll">
     <ng-template pTemplate="header" let-columns>
         <tr>
-            <th *ngFor="let col of columns">
-                {{col.label}}
+            <th style="flex: 0 0 3rem">
+                <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
             </th>
+            <ng-container *ngFor="let col of columns">
+                <th style="flex: 0 0 10rem" pResizableColumn pReorderableColumn pFrozenColumn alignFrozen="right" [frozen]="col?.fixed">
+                    {{col.label}}
+                    <p-sortIcon field="{{col.id}}"></p-sortIcon>
+                </th>
+            </ng-container>
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-rowData let-columns="columns">
         <tr>
-            <td *ngFor="let col of columns">
-                {{rowData[col.field]}}
+            <td style="flex: 0 0 3rem">
+                <p-tableCheckbox [value]="columns"></p-tableCheckbox>
             </td>
+            <ng-container *ngFor="let col of columns">
+                <td style="flex: 0 0 10rem" class="ui-resizable-column" alignFrozen="right"  
+                pFrozenColumn 
+                [frozen]="col?.fixed">
+                    {{rowData[col.id]}}
+                </td>
+            </ng-container>
         </tr>
     </ng-template>
 </p-table>

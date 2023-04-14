@@ -13,7 +13,10 @@ export const DATA = {
 			"category": "Accessories",
 			"quantity": 24,
 			"inventoryStatus": "INSTOCK",
-			"rating": 5
+			"rating": 5,
+			"number": 100,
+			"hello": "hello",
+			"fixed": "true"
 		},
 		{
 			"id": "1001",
@@ -25,7 +28,10 @@ export const DATA = {
 			"category": "Accessories",
 			"quantity": 61,
 			"inventoryStatus": "INSTOCK",
-			"rating": 4
+			"rating": 4,
+			"number": 100,
+			"hello": "hello",
+			"fixed": "true"
 		},
 		{
 			"id": "1002",
@@ -37,7 +43,10 @@ export const DATA = {
 			"category": "Fitness",
 			"quantity": 2,
 			"inventoryStatus": "LOWSTOCK",
-			"rating": 3
+			"rating": 3,
+			"number": 100,
+			"hello": "hello",
+			"fixed": "true"
 		},
 		{
 			"id": "1003",
@@ -49,7 +58,10 @@ export const DATA = {
 			"category": "Clothing",
 			"quantity": 25,
 			"inventoryStatus": "INSTOCK",
-			"rating": 5
+			"rating": 5,
+			"number": 100,
+			"hello": "hello",
+			"fixed": "true"
 		},
 		{
 			"id": "1004",
@@ -61,7 +73,10 @@ export const DATA = {
 			"category": "Accessories",
 			"quantity": 73,
 			"inventoryStatus": "INSTOCK",
-			"rating": 4
+			"rating": 4,
+			"number": 100,
+			"hello": "hello",
+			"fixed": "true"
 		},
 		{
 			"id": "1005",
@@ -73,7 +88,10 @@ export const DATA = {
 			"category": "Accessories",
 			"quantity": 0,
 			"inventoryStatus": "OUTOFSTOCK",
-			"rating": 4
+			"rating": 4,
+			"number": 100,
+			"hello": "hello",
+			"fixed": "true"
 		},
 		{
 			"id": "1006",
@@ -85,7 +103,10 @@ export const DATA = {
 			"category": "Accessories",
 			"quantity": 5,
 			"inventoryStatus": "LOWSTOCK",
-			"rating": 3
+			"rating": 3,
+			"number": 100,
+			"hello": "hello",
+			"fixed": "true"
 		},
 		{
 			"id": "1007",
@@ -97,7 +118,10 @@ export const DATA = {
 			"category": "Accessories",
 			"quantity": 23,
 			"inventoryStatus": "INSTOCK",
-			"rating": 5
+			"rating": 5,
+			"number": 100,
+			"hello": "hello",
+			"fixed": "true"
 		},
 		{
 			"id": "1008",
@@ -109,7 +133,10 @@ export const DATA = {
 			"category": "Electronics",
 			"quantity": 2,
 			"inventoryStatus": "LOWSTOCK",
-			"rating": 4
+			"rating": 4,
+			"number": 100,
+			"hello": "hello",
+			"fixed": "true"
 		},
 		{
 			"id": "1009",
@@ -121,7 +148,10 @@ export const DATA = {
 			"category": "Electronics",
 			"quantity": 63,
 			"inventoryStatus": "INSTOCK",
-			"rating": 3
+			"rating": 3,
+			"number": 100,
+			"hello": "hello",
+			"fixed": "true"
 		}
 	]
 };
@@ -130,44 +160,65 @@ export const DATA = {
  * headers constant for demo
  */
 export const HEADERS = [
-    {
-        id: 'id',
-        label: 'Id'
-    },
-    {
-        id: 'code',
-        label: 'Code'
-    },
-    {
-        id: 'name',
-        label: 'Name'
-    },
-    {
-        id: 'description',
-        label: 'Description'
-    },
-    {
-        id: 'image',
-        label: 'Image'
-    },
-    {
-        id: 'price',
-        label: 'Price'
-    },
-    {
-        id: 'category',
-        label: 'Category'
-    },
-    {
-        id: 'quantity',
-        label: 'Quantity'
-    },
-    {
-        id: 'inventoryStatus',
-        label: 'Inventory Status'
-    },
-    {
-        id: 'rating',
-        label: 'Rating'
-    }
+	{
+		id: 'id',
+		label: 'Id', 
+		fixed: false
+	},
+	{
+		id: 'code',
+		label: 'Code', 
+		fixed: false
+	},
+	{
+		id: 'name',
+		label: 'Name', 
+		fixed: false
+	},
+	{
+		id: 'description',
+		label: 'Description', 
+		fixed: false
+	},
+	{
+		id: 'image',
+		label: 'Image', 
+		fixed: false
+	},
+	{
+		id: 'price',
+		label: 'Price', 
+		fixed: false
+	},
+	{
+		id: 'category',
+		label: 'Category', 
+		fixed: false
+	},
+	{
+		id: 'quantity',
+		label: 'Quantity', 
+		fixed: false
+	},
+	{
+		id: 'inventoryStatus',
+		label: 'Inventory Status', 
+		fixed: false
+	},
+	{
+		id: 'rating',
+		label: 'Rating', 
+		fixed: false
+	},
+	{
+		id: 'number',
+		label: 'Number', 
+		fixed: false
+	},
+	{
+		id: 'hello',
+		label: 'Hello', 
+		fixed: false
+	},
+	{ id: 'fixed', label: 'Fixed', fixed: true }
 ];
